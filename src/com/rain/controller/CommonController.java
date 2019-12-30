@@ -19,6 +19,7 @@ public class CommonController {
 		String blank = "index";
 		return blank;
 	}
+
 	@RequestMapping(value="/welcome")
 	 public String welcome(){
 		String blank = "welcome";

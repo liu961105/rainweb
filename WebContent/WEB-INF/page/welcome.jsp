@@ -16,7 +16,7 @@
     <body>
     <div class="x-body layui-anim layui-anim-up">
         <blockquote class="layui-elem-quote">欢迎管理员：
-            <span class="x-red">${sessionScope.user_session.username }</span>！当前时间:2018-04-25 20:50:53-------这些数据都是假的，认真你就输了</blockquote>
+            <span class="x-red">${sessionScope.user_session.username }</span></blockquote>
         <fieldset class="layui-elem-field">
             <legend>数据统计</legend>
             <div class="layui-field-box">
@@ -26,7 +26,7 @@
                             <div class="layui-carousel x-admin-carousel x-admin-backlog" lay-anim="" lay-indicator="inside" lay-arrow="none" style="width: 100%; height: 90px;">
                                 <div carousel-item="">
                                     <ul class="layui-row layui-col-space10 layui-this">
-                                      <%--   <li class="layui-col-xs2">
+                                         <li class="layui-col-xs2">
                                             <a href="javascript:;" class="x-admin-backlog-body">
                                                 <h3>文章数</h3>
                                                 <p>
@@ -67,7 +67,7 @@
                                                 <p>
                                                     <cite>6766</cite></p>
                                             </a>
-                                        </li> --%>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>

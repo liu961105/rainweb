@@ -1,7 +1,10 @@
 package com.rain.util.common;
 
+/**
+ *  数据库表常量
+ */
 public class Constants {
-	// 数据库表常量
+
 		public static final String USERTABLE = "user_inf";
 		public static final String DEPTTABLE = "dept_inf";
 		public static final String JOBTABLE = "job_inf";
