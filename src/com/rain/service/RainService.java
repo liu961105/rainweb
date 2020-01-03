@@ -2,12 +2,7 @@ package com.rain.service;
 
 import java.util.List;
 
-import com.rain.domain.User;
-import com.rain.domain.Dept;
-import com.rain.domain.Document;
-import com.rain.domain.Employee;
-import com.rain.domain.Job;
-import com.rain.domain.Notice;
+import com.rain.domain.*;
 
 public interface RainService {
 	/**
@@ -90,5 +85,5 @@ public interface RainService {
 	void insert_UserInfo(User notice);
 
 	void delete_UserInfo(Integer id);
-	
+
 }

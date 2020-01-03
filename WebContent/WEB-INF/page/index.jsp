@@ -175,6 +175,28 @@
                     </li>
                 </ul>
             </li>
+
+            <li>
+                <a href="javascript:;">
+                    <i class="iconfont">&#xe6b4;</i>
+                    <cite>数据管理</cite>
+                    <i class="iconfont nav_right">&#xe697;</i>
+                </a>
+                <ul class="sub-menu">
+                    <li>
+                        <a _href="${ctx }/dataStatistics/list">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>数据统计</cite>
+                        </a>
+                    </li>
+                    <li>
+                        <a _href="${ctx }/document/add">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>数据比较</cite>
+                        </a>
+                    </li>
+                </ul>
+            </li>
         </ul>
       </div>
     </div>

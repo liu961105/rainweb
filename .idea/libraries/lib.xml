@@ -48,6 +48,7 @@
       <root url="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/javassist-3.20.0-GA.jar!/" />
       <root url="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/log4j-1.2.17.jar!/" />
       <root url="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/spring-aop-4.2.0.RELEASE.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/lombok-1.18.8.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

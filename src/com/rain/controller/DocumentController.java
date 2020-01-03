@@ -41,6 +41,7 @@ public class DocumentController {
 			String blank = "/document/list";
 			return blank;
 		}
+
 		@RequestMapping(value="/document/list",method=RequestMethod.GET)
 		 public String index(Model model,String content){
 			List<Document> job_list = rainservice.get_DocumentList();

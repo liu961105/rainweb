@@ -19,7 +19,8 @@ public interface UserDao {
 	@Select("select * from "+USERTABLE+"  where loginname like CONCAT('%',#{content},'%')")
 	List<User> get_LikeList(String content);
 
-	@Select("select * from "+USERTABLE+"  where loginname = #{loginname} AND password = #{password}")
+	@Select("select * from "+USERTABLE+"  where loginname = #{loginname} " +
+			"AND password = #{password}")
 	User get_login(@Param("loginname") String loginname,
 			@Param("password") String password);
 	

@@ -36,14 +36,9 @@
             <option value="2">用户</option>
             </select>
             <br>
-            <input value="登录" lay-submit lay-filter="login" style="width:100%;" type="submit">
+            <input value="去登录" lay-submit lay-filter="login" style="width:100%;" type="submit">
             <hr class="hr20" >
         </form>
     </div>
-
-
-
-    
-  
 </body>
 </html>
