@@ -53,26 +53,55 @@
                 <td>${dataItem.membershipNumber}</td>
                 <td>${dataItem.replyNumber }</td>
                 <td>${dataItem.commodityNumber}</td>
-                <td class="td-manage " title="编辑">
-                    <button id='editBtn' type='button'><i class="layui-icon">&#xe642;</i>
-                    </button>
+                <td class="td-manage">
+                    <!--  <a onclick="member_stop(this,'10001')" href="javascript:;"  title="启用">
+                       <i class="layui-icon">&#xe601;</i>
+                     </a> -->
+                    <a title="编辑" onclick="edit()">
+                        <i class="layui-icon">&#xe642;</i>
+                    </a>
                 </td>
             </tr>
         </c:forEach>
         </tbody>
     </table>
-    <!--  <div class="page">
-       <div>
-         <a class="prev" href="">&lt;&lt;</a>
-         <a class="num" href="">1</a>
-         <span class="current">2</span>
-         <a class="num" href="">3</a>
-         <a class="num" href="">489</a>
-         <a class="next" href="">&gt;&gt;</a>
-       </div>
-     </div> -->
-
 </div>
+<!--编辑按钮点击弹出层-->
+<div id="editArea" style="display: none">
+    <form class="layui-form">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">文章数</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="articleNumber"autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">会员数</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="membershipNumber"autocomplete="off" class="layui-input">
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">回复数</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="replyNumber"autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">商品数</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="commodityNumber" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<!--完 -->
+</body>
+</html>
 <script>
     layui.use('laydate', function () {
         var laydate = layui.laydate;
@@ -86,59 +115,17 @@
             elem: '#end' //指定元素
         });
     });
-
-    /*用户-停用*/
-    function member_stop(obj, id) {
-        layer.confirm('确认要停用吗？', function (index) {
-
-            if ($(obj).attr('title') == '启用') {
-
-                //发异步把用户状态进行更改
-                $(obj).attr('title', '停用')
-                $(obj).find('i').html('&#xe62f;');
-
-                $(obj).parents("tr").find(".td-status").find('span').addClass('layui-btn-disabled').html('已停用');
-                layer.msg('已停用!', {icon: 5, time: 1000});
-
-            } else {
-                $(obj).attr('title', '启用')
-                $(obj).find('i').html('&#xe601;');
-
-                $(obj).parents("tr").find(".td-status").find('span').removeClass('layui-btn-disabled').html('已启用');
-                layer.msg('已启用!', {icon: 5, time: 1000});
-            }
-
-        });
-    }
-
-    /*用户-删除*/
-    function member_del(obj, id) {
-        layer.confirm('确认要删除吗？', function (index) {
-            //发异步删除数据
-            //等以后再使用异步，这里先使用
-            $.get("${ctx}/user/delete?id=" + id);
-            $(obj).parents("tr").remove();
-            layer.msg('已删除!', {icon: 1, time: 1000});
-        });
-    }
-
-
-    function delAll(argument) {
-
-        var data = tableCheck.getData();
-
-        layer.confirm('确认要删除吗？' + data, function (index) {
-            //捉到所有被选中的，发异步进行删除
-            layer.msg('删除成功', {icon: 1});
-            $(".layui-form-checked").not('.header').parents('tr').remove();
-        });
-    }
-
     function edit() {
+        $.post('${ctx}/findById')
+        layer.open({
+            type: 1,
+            title: "编辑数据统计",
+            content: $('#editArea'),
+            area:['40%','40%'],
+            btn:['确认','取消']
 
+        })
     }
+
+
 </script>
-
-</body>
-
-</html>

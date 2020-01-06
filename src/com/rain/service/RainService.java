@@ -5,85 +5,96 @@ import java.util.List;
 import com.rain.domain.*;
 
 public interface RainService {
-	/**
-	 * 部门信息的service
-	 * @param content
-	 * @return
-	 */
-	List<Dept> findAllDept(String content);
-	
-	void addDept(Dept dept);
+    /**
+     * 部门信息的service
+     *
+     * @param content
+     * @return
+     */
+    List<Dept> findAllDept(String content);
 
-	Dept get_Info(Integer id);
+    void addDept(Dept dept);
 
-	void update_Info(Dept dept);
+    Dept get_Info(Integer id);
 
-	void delete_Info(Integer id);
+    void update_Info(Dept dept);
 
-	List<Dept> findAllDept();
-	/**
-	 * 职位信息的service
-	 * @return
-	 */
 
-	List<Job> findAllJob();
-	
-	List<Job> findAllJob(String content);
+    void delete_Info(Integer id);
 
-	Job get_JobInfo(Integer id);
+    List<Dept> findAllDept();
 
-	void update_JobInfo(Job job);
+    /**
+     * 职位信息的service
+     *
+     * @return
+     */
 
-	void insert_JobInfo(Job job);
+    List<Job> findAllJob();
 
-	void delete_JobInfo(Integer id);
-	/**
-	 * 员工信息的service
-	 */
-	List<Employee> get_EmployeeList();
-	List<Employee> get_EmployeeLikeList(String content);
-	Employee get_EmployeeInfo(Integer id);
-	void update_EmployeeInfo(Employee data);
-	void insert_EmployeeInfo(Employee data);
-	void delete_EmployeeInfo(Integer id);
-	Employee login2(String loginname, String password);
+    List<Job> findAllJob(String content);
 
-	List<Notice> get_NoticeList();
+    Job get_JobInfo(Integer id);
 
-	List<Notice> get_NoticeLikeList(String content);
+    void update_JobInfo(Job job);
 
-	Notice get_NoticeInfo(Integer id);
+    void insert_JobInfo(Job job);
 
-	void update_NoticeInfo(Notice notice);
+    void delete_JobInfo(Integer id);
 
-	void insert_NoticeInfo(Notice notice);
+    /**
+     * 员工信息的service
+     */
+    List<Employee> get_EmployeeList();
 
-	void delete_NoticeInfo(Integer id);
+    List<Employee> get_EmployeeLikeList(String content);
 
-	List<Document> get_DocumentList();
+    Employee get_EmployeeInfo(Integer id);
 
-	List<Document> get_DocumentLikeList(String content);
+    void update_EmployeeInfo(Employee data);
 
-	Document get_DocumentInfo(Integer id);
+    void insert_EmployeeInfo(Employee data);
 
-	void update_DocumentInfo(Document notice);
+    void delete_EmployeeInfo(Integer id);
 
-	void insert_DocumentInfo(Document notice);
+    Employee login2(String loginname, String password);
 
-	void delete_DocumentInfo(Integer id);
+    List<Notice> get_NoticeList();
 
-	User login(String loginname, String password);
+    List<Notice> get_NoticeLikeList(String content);
 
-	List<User> get_UserList();
+    Notice get_NoticeInfo(Integer id);
 
-	List<User> get_UserLikeList(String content);
+    void update_NoticeInfo(Notice notice);
 
-	User get_UserInfo(Integer id);
+    void insert_NoticeInfo(Notice notice);
 
-	void update_UserInfo(User notice);
+    void delete_NoticeInfo(Integer id);
 
-	void insert_UserInfo(User notice);
+    List<Document> get_DocumentList();
 
-	void delete_UserInfo(Integer id);
+    List<Document> get_DocumentLikeList(String content);
+
+    Document get_DocumentInfo(Integer id);
+
+    void update_DocumentInfo(Document notice);
+
+    void insert_DocumentInfo(Document notice);
+
+    void delete_DocumentInfo(Integer id);
+
+    User login(String loginname, String password);
+
+    List<User> get_UserList();
+
+    List<User> get_UserLikeList(String content);
+
+    User get_UserInfo(Integer id);
+
+    void update_UserInfo(User notice);
+
+    void insert_UserInfo(User notice);
+
+    void delete_UserInfo(Integer id);
 
 }

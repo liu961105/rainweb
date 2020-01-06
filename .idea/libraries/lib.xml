@@ -49,6 +49,7 @@
       <root url="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/log4j-1.2.17.jar!/" />
       <root url="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/spring-aop-4.2.0.RELEASE.jar!/" />
       <root url="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/lombok-1.18.8.jar!/" />
+      <root url="jar://E:/commons-lang3-3.10-20200101.143848-271.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
