@@ -21,7 +21,7 @@
 <body>
     <!-- 顶部开始 -->
     <div class="container">
-        <div class="logo"><a href="./index.html">人事管理系统</a></div>
+        <div class="logo"><a href="./index.html">小微企业人力管理平台</a></div>
         <div class="left_open">
             <i title="展开左侧栏" class="iconfont">&#xe699;</i>
         </div>
@@ -190,7 +190,7 @@
                         </a>
                     </li>
                     <li>
-                        <a _href="${ctx }/document/add">
+                        <a _href="${ctx }/dataStatistics/dataComparison">
                             <i class="iconfont">&#xe6a7;</i>
                             <cite>数据比较</cite>
                         </a>
