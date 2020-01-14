@@ -23,4 +23,9 @@ public class DataStatisticsServiceImpl implements DataStatisticsService {
     public List<DataStatistics> get_DataStatistics() {
         return dataStatisticsDao.get_DataStatistics();
     }
+
+    @Override
+    public DataStatistics findOne() {
+        return dataStatisticsDao.findOne();
+    }
 }

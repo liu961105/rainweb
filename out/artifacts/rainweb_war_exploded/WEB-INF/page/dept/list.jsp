@@ -45,11 +45,9 @@
             <button class="layui-btn" lay-submit="" lay-filter="sreach"><i class="layui-icon">&#xe615;</i></button>
         </form>
     </div>
-    <%-- <xblock>
-<!--        <button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon"></i>批量删除</button> -->
-      <button class="layui-btn" onclick="x_admin_show('添加用户','${ctx}/dept/add')"><i class="layui-icon"></i>添加</button>
-      <span class="x-right" style="line-height:40px">共有数据：88 条</span>
-    </xblock> --%>
+     <xblock>
+      <button class="layui-btn" onclick="x_admin_show('添加部门','${ctx}/dept/add')"><i class="layui-icon"></i>添加</button>
+    </xblock>
 
 
     <table class="layui-table">
@@ -62,7 +60,7 @@
             <th>ID</th>
             <th>部门名称</th>
             <th>详细信息</th>
-            <!-- <th>状态</th> -->
+<%--            <th>状态</th>--%>
             <th>操作</th>
         </thead>
         <tbody>
@@ -103,17 +101,6 @@
 
         </tbody>
     </table>
-    <!--  <div class="page">
-       <div>
-         <a class="prev" href="">&lt;&lt;</a>
-         <a class="num" href="">1</a>
-         <span class="current">2</span>
-         <a class="num" href="">3</a>
-         <a class="num" href="">489</a>
-         <a class="next" href="">&gt;&gt;</a>
-       </div>
-     </div> -->
-
 </div>
 <script>
     layui.use('laydate', function () {

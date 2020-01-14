@@ -30,9 +30,6 @@
         <a>
           <cite>公告信息</cite></a>
       </span>
-      <button type="button" onclick="location.href='${ctx}/document/add'" class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:innert;margin-left:75%;;"  ><i class="layui-icon"></i>增加</button>
-      <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right" href="${ctx }/notice/list" title="刷新">
-        <i class="layui-icon" style="line-height:30px">ဂ</i></a>
     </div>
     <div class="x-body">
       <div class="layui-row" style="" align="center">
@@ -43,11 +40,11 @@
           <button class="layui-btn"  lay-submit="" lay-filter="sreach"><i class="layui-icon">&#xe615;</i></button>
         </form>
       </div>
-      <%-- <xblock>
- <!--        <button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon"></i>批量删除</button> -->
-        <button class="layui-btn" onclick="x_admin_show('添加用户','${ctx}/dept/add')"><i class="layui-icon"></i>添加</button>
-        <span class="x-right" style="line-height:40px">共有数据：88 条</span>
-      </xblock> --%>
+        <xblock>
+            <button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon"></i>批量删除</button>
+            <button class="layui-btn" onclick="x_admin_show('添加公告','${ctx }/notice/add')"><i class="layui-icon"></i>添加
+            </button>
+        </xblock>
      
       
       <table class="layui-table">
@@ -72,8 +69,8 @@
             <td>${dept.id}</td>
             <td>${dept.title }</td>
             <td>${dept.content }</td>
-            <td>${dept.create_date }</td>
-            <td>${dept.user.name }</td>
+            <td>${dept.createDate }</td>
+            <td>${dept.userId }</td>
             
            <!--  <td class="td-status">
               <span class="layui-btn layui-btn-normal layui-btn-mini">已启用</span></td> -->

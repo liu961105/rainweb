@@ -10,4 +10,5 @@ public interface DataStatisticsService {
 	 */
     List<DataStatistics> get_DataStatistics();
 
+    DataStatistics findOne();
 }

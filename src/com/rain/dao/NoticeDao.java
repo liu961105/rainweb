@@ -30,4 +30,6 @@ public interface NoticeDao {
 	@Delete(" delete from "+NOTICETABLE+" where id = #{id} ")
 	void delete_Info(Integer id);
 
+	@Select(" select * from "+NOTICETABLE+" ORDER BY create_Date DESC LIMIT 1 ")
+    Notice getNewNotice();
 }

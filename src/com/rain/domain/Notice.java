@@ -2,51 +2,64 @@ package com.rain.domain;
 
 import java.io.Serializable;
 
-public class Notice  implements Serializable{
+/**
+ * 公告管理实体
+ */
+public class Notice implements Serializable {
 	private Integer id;
 	private String title;
 	private String content;
-	private String Create_date;
-	private Integer user_id;
-	private User user;
-	public Notice(){
-		super();
-	}
+	private String createDate;
+	private Integer userId;
+	private String userName;
+
+
 	public Integer getId() {
 		return id;
 	}
+
 	public void setId(Integer id) {
 		this.id = id;
 	}
+
 	public String getTitle() {
 		return title;
 	}
+
 	public void setTitle(String title) {
 		this.title = title;
 	}
+
 	public String getContent() {
 		return content;
 	}
+
 	public void setContent(String content) {
 		this.content = content;
 	}
-	public String getCreate_date() {
-		return Create_date;
+
+	public String getCreateDate() {
+		return createDate;
 	}
-	public void setCreate_date(String create_date) {
-		Create_date = create_date;
+
+	public void setCreateDate(String createDate) {
+		this.createDate = createDate;
 	}
-	public Integer getUser_id() {
-		return user_id;
+
+	public Integer getUserId() {
+		return userId;
 	}
-	public void setUser_id(Integer user_id) {
-		this.user_id = user_id;
+
+	public void setUserId(Integer userId) {
+		this.userId = userId;
 	}
-	public User getUser() {
-		return user;
+
+	public String getUserName() {
+		return userName;
 	}
-	public void setUser(User user) {
-		this.user = user;
+
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
-	
+
 }

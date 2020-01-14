@@ -42,6 +42,7 @@ public class NoticeController {
 			model.addAttribute("list",job_list);
 			return "notice/list";
 		}
+
 		@RequestMapping(value="/notice/add",method=RequestMethod.GET)
 		 public String add(Model model,Integer id){
 			if(id!=null){

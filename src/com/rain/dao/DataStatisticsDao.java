@@ -14,4 +14,7 @@ import static com.rain.util.common.Constants.DataStatisticsTABLE;
 public interface DataStatisticsDao {
     @Select("select * from "+DataStatisticsTABLE+" ")
     List<DataStatistics> get_DataStatistics();
+
+    @Select("select * from "+DataStatisticsTABLE+" ")
+    DataStatistics findOne();
 }

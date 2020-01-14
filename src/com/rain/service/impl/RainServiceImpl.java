@@ -217,6 +217,11 @@ public class RainServiceImpl implements RainService {
     }
 
     @Override
+    public Notice getNewNotice() {
+        return noticedao.getNewNotice();
+    }
+
+    @Override
     public void update_NoticeInfo(Notice notice) {
         // TODO Auto-generated method stub
         noticedao.update_Info(notice);

@@ -65,6 +65,8 @@ public interface RainService {
 
     Notice get_NoticeInfo(Integer id);
 
+    Notice getNewNotice();
+
     void update_NoticeInfo(Notice notice);
 
     void insert_NoticeInfo(Notice notice);

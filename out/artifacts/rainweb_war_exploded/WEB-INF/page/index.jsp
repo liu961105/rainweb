@@ -6,7 +6,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>后台管理</title>
+	<title>小微企业后台管理平台</title>
 	<meta name="renderer" content="webkit|ie-comp|ie-stand">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
@@ -48,25 +48,30 @@
             <li>
                 <a href="javascript:;">
                     <i class="iconfont">&#xe6b8;</i>
-                    <cite>用户管理</cite>
+                    <cite>人事管理</cite>
                     <i class="iconfont nav_right">&#xe697;</i>
                 </a>
                 <ul class="sub-menu">
                     <li>
                         <a _href="${ctx }/user/list">
                             <i class="iconfont">&#xe6a7;</i>
-                            <cite>用户列表</cite>
-                            
+                            <cite>员工管理</cite>
                         </a>
                     </li >
                     <li>
-                        <a _href="${ctx }/user/add">
+                        <a _href="/">
                             <i class="iconfont">&#xe6a7;</i>
-                            <cite>添加用户</cite>
+                            <cite>员工培训</cite>
                             
                         </a>
                     </li>
-                   
+                    <li>
+                        <a _href="/">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>岗位申请</cite>
+
+                        </a>
+                    </li>
                 </ul>
             </li>
             <li>
@@ -80,12 +85,6 @@
                         <a _href="${ctx }/dept/list">
                             <i class="iconfont">&#xe6a7;</i>
                             <cite>部门列表</cite>
-                        </a>
-                    </li >
-                    <li>
-                        <a _href="${ctx }/dept/add">
-                            <i class="iconfont">&#xe6a7;</i>
-                            <cite>添加部门</cite>
                         </a>
                     </li >
                 </ul>
@@ -103,36 +102,30 @@
                             <cite>职位列表</cite>
                         </a>
                     </li >
-                     <li>
-                        <a _href="${ctx }/job/add">
-                            <i class="iconfont">&#xe6a7;</i>
-                            <cite>添加职位</cite>
-                        </a>
-                    </li >
                 </ul>
             </li>
-           
-            <li>
-                <a href="javascript:;">
-                    <i class="iconfont">&#xe726;</i>
-                    <cite>员工管理</cite>
-                    <i class="iconfont nav_right">&#xe697;</i>
-                </a>
-                <ul class="sub-menu">
-                    <li>
-                        <a _href="${ctx }/employee/list">
-                            <i class="iconfont">&#xe6a7;</i>
-                            <cite>员工列表</cite>
-                        </a>
-                    </li >
-                    <li>
-                        <a _href="${ctx }/employee/add">
-                            <i class="iconfont">&#xe6a7;</i>
-                            <cite>添加员工</cite>
-                        </a>
-                    </li >
-                </ul>
-            </li>
+<%--           --%>
+<%--            <li>--%>
+<%--                <a href="javascript:;">--%>
+<%--                    <i class="iconfont">&#xe726;</i>--%>
+<%--                    <cite>员工管理</cite>--%>
+<%--                    <i class="iconfont nav_right">&#xe697;</i>--%>
+<%--                </a>--%>
+<%--                <ul class="sub-menu">--%>
+<%--                    <li>--%>
+<%--                        <a _href="${ctx }/employee/list">--%>
+<%--                            <i class="iconfont">&#xe6a7;</i>--%>
+<%--                            <cite>员工列表</cite>--%>
+<%--                        </a>--%>
+<%--                    </li >--%>
+<%--                    <li>--%>
+<%--                        <a _href="${ctx }/employee/add">--%>
+<%--                            <i class="iconfont">&#xe6a7;</i>--%>
+<%--                            <cite>添加员工</cite>--%>
+<%--                        </a>--%>
+<%--                    </li >--%>
+<%--                </ul>--%>
+<%--            </li>--%>
             <li>
                 <a href="javascript:;">
                     <i class="iconfont">&#xe6ce;</i>
@@ -144,12 +137,6 @@
                         <a _href="${ctx }/notice/list">
                             <i class="iconfont">&#xe6a7;</i>
                             <cite>公告查询</cite>
-                        </a>
-                    </li >
-                    <li>
-                        <a _href="${ctx }/notice/add">
-                            <i class="iconfont">&#xe6a7;</i>
-                            <cite>添加公告</cite>
                         </a>
                     </li >
                 </ul>
